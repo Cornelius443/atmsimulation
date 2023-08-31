@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.atmmachine.Menu">
+
+    <Pane layoutX="-1.0" layoutY="-6.0" prefHeight="408.0" prefWidth="236.0" style="-fx-background-color: #333;">
+        <children>
+            <Circle fill="#192b3c" layoutX="118.0" layoutY="185.0" radius="79.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#c9e1ff" layoutX="73.0" layoutY="123.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label alignment="CENTER" layoutX="31.0" layoutY="284.0" prefHeight="21.0" prefWidth="180.0" text="Pluto" textAlignment="CENTER" textFill="WHITE">
+                <font>
+                    <Font size="29.0" />
+                </font></Label>
+            <Line endX="40.5" layoutX="149.0" layoutY="275.0" opacity="0.64" startX="-100.0" stroke="#c9e1ff" />
+        </children>
+    </Pane>
+   <Button layoutX="300.0" layoutY="150.0" mnemonicParsing="false" onAction="#withdrawalButtonAction" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: #192b3c;" text="Withdrawal" textFill="WHITE" />
+   <Button layoutX="429.0" layoutY="150.0" mnemonicParsing="false" onAction="#DepositButtonAction" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: #192b3c;" text="Deposit" textFill="WHITE" />
+   <Button layoutX="301.0" layoutY="250.0" mnemonicParsing="false" onAction="#balanceButtonAction" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: #192b3c;" text="Check Balance" textFill="WHITE" />
+   <Button layoutX="430.0" layoutY="250.0" mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: darkred;" text="Exit" textFill="WHITE" />
+   <Label layoutX="314.0" layoutY="74.0" prefHeight="21.0" prefWidth="230.0" text="Choose Transaction">
+      <font>
+         <Font name="Andale Mono" size="18.0" />
+      </font>
+   </Label>
+   <Label fx:id="greetUser" layoutX="350.0" layoutY="28.0" prefHeight="23.0" prefWidth="142.0" text="Welcome user">
+      <font>
+         <Font name="Andale Mono" size="14.0" />
+      </font>
+   </Label>
+</AnchorPane>
